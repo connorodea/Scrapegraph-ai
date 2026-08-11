@@ -1,0 +1,300 @@
+github:
+  api_url: "https://api.github.com"
+  concurrency: 6
+  per_page: 100
+  request_timeout_seconds: 30
+  max_retries: 5
+  user_agent: "juricratic-research-radar/0.1"
+
+discovery:
+  start_date: 2008-01-01
+  end_date:
+  max_results_per_shard: 950
+  min_stars: 0
+  include_forks: false
+  include_archived: false
+  max_queries:
+  seed_repositories:
+    - connorodea/bidaraciv
+    - coastalcph/lex-glue
+    - HazyResearch/legalbench
+    - Breakend/PileOfLaw
+    - The-Atticus-Project/cuad
+    - openlegaldata/awesome-legal-data
+    - prometheusXN/LADAN
+    - prometheusXN/D-LADAN
+    - bigdata-ustc/NeurJudge
+    - PolarisRisingWar/LJP_Collection
+    - azminajid/echr-args-dataset
+    - DUTIR-LegalIntelligence/LegalLJP
+    - SUSTech-TP/Legal_Judgment_Prediction_CN
+    - NEUIR/LegalDuet
+    - haoxizhong/law_pre
+
+snapshot:
+  directory: "./snapshots"
+  max_repo_mb: 200
+  max_count: 25
+  minimum_score: 65
+
+queries:
+  - '"legal judgment prediction" dataset in:name,description,readme'
+  - '"judicial decision prediction" in:name,description,readme'
+  - '"court decision prediction" machine learning in:name,description,readme'
+  - '"case outcome prediction" law in:name,description,readme'
+  - '"legal argument mining" dataset in:name,description,readme'
+  - '"legal reasoning" annotated corpus in:name,description,readme'
+  - '"court judgments" annotated dataset in:name,description,readme'
+  - '"legal grounds" classification in:name,description,readme'
+  - '"legal NLP" benchmark in:name,description,readme'
+  - '"legal NLP" transformer in:name,description,readme'
+  - '"legal text classification" dataset in:name,description,readme'
+  - '"legal entailment" benchmark in:name,description,readme'
+  - '"legal retrieval" benchmark in:name,description,readme'
+  - '"case law" dataset transformer in:name,description,readme'
+  - '"court opinion" dataset neural network in:name,description,readme'
+  - '"litigation outcome" prediction in:name,description,readme'
+  - '"judicial behavior" machine learning in:name,description,readme'
+  - '"child custody" court prediction in:name,description,readme'
+  - '"custodia compartida" predicción sentencias in:name,description,readme'
+  - '"argumentación jurídica" corpus in:name,description,readme'
+  - '"fundamentos de derecho" dataset in:name,description,readme'
+  - '"ECHR" legal judgment prediction in:name,description,readme'
+  - '"CAIL" legal judgment prediction in:name,description,readme'
+  - '"legal dataset" "CITATION.cff" in:name,description,readme'
+  - '"legal benchmark" arxiv in:name,description,readme'
+
+ontology:
+  legal_context:
+    - legal
+    - law
+    - court
+    - judicial
+    - judiciary
+    - judgment
+    - judgments
+    - judgement
+    - ruling
+    - case law
+    - caselaw
+    - court opinion
+    - appellate
+    - civil jurisdiction
+    - criminal justice
+    - litigation
+    - lawsuit
+    - docket
+    - statute
+    - regulation
+    - contract
+    - jurisprudence
+    - sentencia
+    - sentencias
+    - jurisprudencia
+    - audiencia provincial
+    - fundamentos de derecho
+    - argumentación jurídica
+  tasks:
+    - legal judgment prediction
+    - legal judgement prediction
+    - judicial decision prediction
+    - court decision prediction
+    - case outcome prediction
+    - outcome prediction
+    - litigation outcome prediction
+    - sentence prediction
+    - sentencing prediction
+    - charge prediction
+    - statute prediction
+    - legal text classification
+    - court opinion classification
+    - legal argument mining
+    - argument mining
+    - rationale extraction
+    - legal reasoning
+    - legal entailment
+    - legal question answering
+    - legal retrieval
+    - precedent retrieval
+    - citation prediction
+    - case summarization
+    - contract clause extraction
+    - named entity recognition
+    - relation extraction
+    - judicial behavior
+    - judge analytics
+    - docket forecasting
+    - procedural outcome
+    - custody prediction
+    - predicción de sentencias
+    - predicción judicial
+  argumentation:
+    - legal grounds
+    - grounds of law
+    - grounds for decision
+    - legal argumentation
+    - legal rationale
+    - ratio decidendi
+    - obiter dictum
+    - issue rule application conclusion
+    - IRAC
+    - support contradiction
+    - evidence reasoning
+    - claim premise
+    - argument scheme
+    - rhetorical role
+    - factual finding
+    - procedural posture
+    - standard of review
+    - burden of proof
+  data_artifacts:
+    - dataset
+    - data set
+    - corpus
+    - benchmark
+    - annotated corpus
+    - labeled dataset
+    - labelled dataset
+    - manual annotation
+    - human annotation
+    - inter-annotator agreement
+    - brat annotation
+    - standoff annotation
+    - BIO tags
+    - judgments dataset
+    - court decisions dataset
+    - case law corpus
+    - docket dataset
+    - pleadings corpus
+    - contracts dataset
+    - legal documents
+    - training data
+    - test set
+    - validation set
+    - data card
+  methods:
+    - transformer
+    - legalbert
+    - legal-bert
+    - bert
+    - roberta
+    - longformer
+    - deberta
+    - bi-lstm
+    - bilstm
+    - lstm
+    - attention network
+    - neural network
+    - graph neural network
+    - GNN
+    - hierarchical encoder
+    - random forest
+    - gradient boosting
+    - xgboost
+    - lightgbm
+    - support vector machine
+    - logistic regression
+    - decision tree
+    - bayesian
+    - topic model
+    - embeddings
+    - retrieval augmented generation
+    - RAG
+    - fine-tuning
+    - pretraining
+    - multi-task learning
+    - contrastive learning
+    - knowledge graph
+    - citation graph
+    - temporal model
+    - survival analysis
+  pipeline_signals:
+    - train.py
+    - training pipeline
+    - preprocessing
+    - data loader
+    - tokenizer
+    - feature engineering
+    - evaluation
+    - benchmark suite
+    - experiment
+    - notebook
+    - model checkpoint
+    - dockerfile
+    - requirements.txt
+    - pyproject.toml
+    - reproducibility
+    - inference pipeline
+    - ETL
+    - scraper
+    - crawler
+    - parser
+    - OCR
+    - de-identification
+  research_markers:
+    - DOI
+    - arXiv
+    - ACL Anthology
+    - PLOS ONE
+    - paper
+    - publication
+    - conference
+    - journal
+    - citation
+    - CITATION.cff
+    - BibTeX
+    - Zenodo
+    - OSF
+    - Figshare
+    - Hugging Face
+    - Papers with Code
+    - supplementary material
+    - model card
+    - data card
+  jurisdictions:
+    - ECHR
+    - ECtHR
+    - European Court of Human Rights
+    - European Union law
+    - CAIL
+    - Chinese law
+    - Spanish law
+    - United States case law
+    - UK case law
+    - Indian legal
+    - Canadian law
+    - Australian law
+    - Aragon
+    - child custody
+    - joint custody
+    - alimony
+    - family home
+    - guarda y custodia
+    - custodia compartida
+    - pensión de alimentos
+    - vivienda familiar
+  negative_terms:
+    - law firm website
+    - legal services marketing
+    - attorney landing page
+    - lawyer portfolio
+    - terms and conditions generator
+    - privacy policy generator
+    - fake court
+    - roleplay court
+  coursework_terms:
+    - homework
+    - classroom assignment
+    - beginner tutorial
+    - bootcamp project
+    - toy dataset
+    - hello world
+
+score_weights:
+  legal_domain: 22
+  research_task: 22
+  data_signal: 14
+  method_signal: 14
+  paper_signal: 14
+  reproducibility: 9
+  quality: 5
