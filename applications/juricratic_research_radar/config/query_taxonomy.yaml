@@ -1,0 +1,544 @@
+version: 1
+name: Juricratic legal-computation research taxonomy
+
+reference_profile:
+  title: A model for predicting court decisions on child custody
+  repository: connorodea/bidaraciv
+  core_phrases:
+    - court decision prediction
+    - judicial decision prediction
+    - legal judgment prediction
+    - court outcome forecasting
+    - litigation outcome prediction
+    - legal decision support system
+    - factual findings
+    - legal principles
+    - legal grounds
+    - court rulings dataset
+    - appellate judgments
+    - manually labeled judgments
+    - brat annotations
+    - temporal validation
+    - argument mining
+  methods:
+    - logistic regression
+    - multivariate regression
+    - multilayer perceptron
+    - radial basis function network
+    - decision tree
+    - CHAID
+    - temporal validation
+  reusable_structure:
+    - outcome label
+    - party request
+    - factual variables
+    - legal-principle variables
+    - judge variables
+    - party variables
+    - jurisdiction variables
+    - date and procedural posture
+    - train-test split by time
+    - explainable decision rules
+
+query_families:
+  legal_prediction:
+    weight: 1.0
+    description: Predicting judgments, outcomes, votes, sentences, damages, or settlement.
+    phrases:
+      - legal judgment prediction
+      - judicial decision prediction
+      - court decision prediction
+      - court outcome prediction
+      - litigation outcome prediction
+      - lawsuit outcome prediction
+      - case outcome forecasting
+      - trial outcome prediction
+      - judicial vote prediction
+      - supreme court forecasting
+      - appellate outcome prediction
+      - sentencing prediction
+      - damages prediction
+      - settlement prediction
+      - case duration prediction
+      - time to disposition
+
+  legal_argumentation:
+    weight: 0.95
+    description: Extracting facts, issues, rules, arguments, evidence, and reasoning chains.
+    phrases:
+      - legal argument mining
+      - legal reasoning extraction
+      - legal rationale extraction
+      - factual finding extraction
+      - legal principle extraction
+      - issue rule application conclusion
+      - IRAC extraction
+      - legal claim evidence graph
+      - argumentation graph law
+      - legal entailment
+      - legal contradiction detection
+      - case fact extraction
+      - holding extraction
+      - ratio decidendi extraction
+      - precedent reasoning
+      - cited facts and principles
+      - legal discourse annotation
+      - rhetorical role labeling
+
+  game_theoretic_litigation:
+    weight: 1.0
+    description: Strategic interaction among parties, counsel, judges, funders, and regulators.
+    phrases:
+      - game theory litigation
+      - game theoretic litigation
+      - game theory law
+      - strategic litigation model
+      - litigation bargaining game
+      - settlement bargaining model
+      - pretrial bargaining
+      - trial settlement game
+      - lawsuit signaling game
+      - legal signaling model
+      - screening model litigation
+      - war of attrition litigation
+      - brinkmanship litigation
+      - holdout litigation
+      - nuisance suit model
+      - frivolous litigation game
+      - asymmetric information litigation
+      - incomplete information litigation
+      - Bayesian game law
+      - extensive form litigation game
+      - repeated game legal
+      - dynamic game litigation
+      - stochastic game law
+      - Stackelberg game law
+      - Nash equilibrium litigation
+      - mechanism design law
+      - principal agent litigation
+      - strategic evidence disclosure
+      - strategic discovery litigation
+      - strategic delay litigation
+      - fee shifting game theory
+      - litigation finance game theory
+      - class action settlement game
+      - plea bargaining game theory
+      - prosecutor defendant game
+      - regulator firm game theory
+
+  behavioral_law_economics:
+    weight: 0.95
+    description: Human biases, bounded rationality, incentives, preferences, and decision behavior.
+    phrases:
+      - behavioral law and economics
+      - behavioral economics litigation
+      - bounded rationality law
+      - prospect theory litigation
+      - loss aversion settlement
+      - anchoring damages
+      - anchoring legal judgment
+      - overconfidence litigation
+      - optimism bias litigation
+      - risk preferences settlement
+      - ambiguity aversion law
+      - endowment effect legal disputes
+      - framing effects court decisions
+      - cognitive bias judges
+      - judicial behavior model
+      - attorney behavior model
+      - counsel behavior prediction
+      - litigant behavior model
+      - emotional arousal court decision
+      - credibility assessment law
+      - jury decision model
+      - negotiation behavior legal
+      - repeat player litigation
+      - procedural justice behavior
+      - therapeutic jurisprudence data
+
+  litigation_economics:
+    weight: 0.9
+    description: Expected value, information asymmetry, costs, fee rules, and settlement economics.
+    phrases:
+      - economics of litigation
+      - law and economics litigation
+      - litigation expected value
+      - expected trial value
+      - settlement range estimation
+      - bargaining surplus litigation
+      - information asymmetry settlement
+      - litigation cost model
+      - attorney fee model litigation
+      - contingent fee incentives
+      - fee shifting settlement
+      - litigation finance prediction
+      - legal spend prediction
+      - case valuation model
+      - damages valuation model
+      - claim severity model
+      - dispute resolution economics
+      - optimal settlement strategy
+      - probability of success litigation
+
+  causal_legal_analytics:
+    weight: 0.9
+    description: Causal inference and sensitivity analysis for legal interventions and outcomes.
+    phrases:
+      - causal inference law
+      - causal legal analytics
+      - treatment effect court
+      - judge fixed effects
+      - judge random assignment
+      - instrumental variables litigation
+      - difference in differences law
+      - regression discontinuity legal
+      - policy evaluation courts
+      - legal rule causal effect
+      - attorney effect litigation success
+      - forum effect case outcome
+      - venue effect litigation
+      - precedent causal effect
+      - citation network causal inference
+      - sensitivity analysis litigation
+      - counterfactual legal reasoning
+      - heterogeneous treatment effects law
+
+  temporal_dynamic_models:
+    weight: 0.9
+    description: State transitions, hazards, event histories, and sequential legal processes.
+    phrases:
+      - litigation state transition model
+      - legal process state machine
+      - procedural posture prediction
+      - case event sequence modeling
+      - legal event prediction
+      - survival analysis litigation
+      - hazard model court cases
+      - time to settlement model
+      - time to disposition model
+      - recurrent event litigation
+      - dynamic Bayesian network law
+      - hidden Markov model litigation
+      - temporal point process legal
+      - sequence model court docket
+      - docket event forecasting
+      - litigation trajectory prediction
+      - case pathway prediction
+
+  multiagent_simulation:
+    weight: 1.0
+    description: Agents, simulations, reinforcement learning, search, and adversarial planning.
+    phrases:
+      - multi agent legal simulation
+      - multiagent litigation simulation
+      - agent based model law
+      - agent based litigation
+      - courtroom simulation AI
+      - legal strategy simulation
+      - adversarial legal reasoning
+      - legal debate agents
+      - moot court agents
+      - reinforcement learning law
+      - reinforcement learning litigation
+      - Monte Carlo litigation simulation
+      - tree search legal strategy
+      - MCTS litigation
+      - extensive form game solver law
+      - imperfect information game law
+      - opponent modeling litigation
+      - counsel strategy model
+      - legal planning agent
+      - procedural strategy optimization
+
+  legal_nlp_models:
+    weight: 0.85
+    description: Domain models, transformers, embeddings, retrieval, classification, and generation.
+    phrases:
+      - legal NLP dataset
+      - legal transformer
+      - LegalBERT
+      - legal language model
+      - case law transformer
+      - legal document classification
+      - judgment classification
+      - legal text classification
+      - legal sentence classification
+      - legal named entity recognition
+      - legal relation extraction
+      - legal information retrieval
+      - case law retrieval
+      - precedent retrieval
+      - legal semantic search
+      - legal embeddings
+      - legal RAG benchmark
+      - legal question answering dataset
+      - legal summarization dataset
+      - long document legal transformer
+      - graph neural network law
+      - legal knowledge graph
+      - citation graph law
+
+  evidence_and_credibility:
+    weight: 0.95
+    description: Evidence strength, admissibility, contradictions, witness credibility, and proof.
+    phrases:
+      - evidence strength prediction
+      - legal evidence graph
+      - evidence contradiction detection
+      - witness credibility model
+      - testimony credibility prediction
+      - admissibility prediction
+      - burden of proof model
+      - standard of proof model
+      - fact pattern similarity
+      - factual consistency legal
+      - claim support detection
+      - legal evidence extraction
+      - document evidence linkage
+      - provenance legal AI
+      - argument support attack graph
+
+  judicial_and_counsel_behavior:
+    weight: 0.95
+    description: Judge, attorney, firm, court, and repeat-player behavior.
+    phrases:
+      - judge analytics dataset
+      - judicial behavior prediction
+      - judge decision model
+      - judge ideology prediction
+      - judge bias analysis
+      - attorney performance analytics
+      - lawyer experience case outcome
+      - counsel win rate model
+      - law firm litigation analytics
+      - opposing counsel analytics
+      - repeat player advantage litigation
+      - court behavior model
+      - forum selection prediction
+      - venue strategy model
+      - panel composition prediction
+
+  legal_network_science:
+    weight: 0.8
+    description: Citation networks, precedent graphs, communities, influence, and diffusion.
+    phrases:
+      - legal citation network
+      - case citation graph
+      - precedent network analysis
+      - judicial citation network
+      - legal network science
+      - court influence network
+      - precedent diffusion
+      - legal doctrine evolution
+      - community detection case law
+      - centrality legal cases
+      - temporal citation graph law
+      - heterogeneous legal graph
+
+  datasets_and_benchmarks:
+    weight: 0.85
+    description: Corpora, annotations, benchmarks, data pipelines, and reproducible artifacts.
+    phrases:
+      - legal dataset
+      - court cases dataset
+      - court rulings dataset
+      - judgments corpus
+      - case law corpus
+      - litigation dataset
+      - legal benchmark
+      - annotated legal corpus
+      - labeled court decisions
+      - legal annotation guidelines
+      - legal data pipeline
+      - court data scraper
+      - docket data pipeline
+      - legal ETL pipeline
+      - legal research benchmark
+      - reproducible legal NLP
+
+artifact_terms:
+  high_value:
+    - dataset
+    - corpus
+    - benchmark
+    - annotations
+    - labels
+    - training data
+    - test set
+    - validation set
+    - data pipeline
+    - ETL
+    - notebook
+    - reproducible
+    - pretrained model
+    - model checkpoint
+    - weights
+    - feature engineering
+    - schema
+    - ontology
+    - knowledge graph
+    - graph dataset
+    - citation network
+    - simulation engine
+    - solver
+    - evaluation harness
+  file_signals:
+    - .csv
+    - .tsv
+    - .json
+    - .jsonl
+    - .parquet
+    - .xlsx
+    - .ann
+    - .txt
+    - .xml
+    - .rdf
+    - .ttl
+    - .ipynb
+    - .py
+    - .r
+    - .do
+    - .sav
+    - .pkl
+    - .pt
+    - .pth
+    - .safetensors
+    - .onnx
+    - .yaml
+    - .yml
+    - CITATION.cff
+    - LICENSE
+    - README.md
+    - requirements.txt
+    - pyproject.toml
+    - environment.yml
+
+method_terms:
+  statistical:
+    - logistic regression
+    - probit
+    - linear regression
+    - multilevel model
+    - hierarchical model
+    - mixed effects
+    - survival analysis
+    - Cox model
+    - hazard model
+    - Bayesian regression
+    - structural equation model
+    - panel data
+    - causal inference
+  machine_learning:
+    - random forest
+    - gradient boosting
+    - XGBoost
+    - LightGBM
+    - AdaBoost
+    - decision tree
+    - CHAID
+    - support vector machine
+    - neural network
+    - multilayer perceptron
+    - radial basis function
+    - transformer
+    - BERT
+    - LegalBERT
+    - graph neural network
+    - GNN
+    - LSTM
+    - BiLSTM
+    - CRF
+    - contrastive learning
+    - representation learning
+  strategic_and_dynamic:
+    - game theory
+    - Nash equilibrium
+    - Stackelberg
+    - Bayesian game
+    - extensive form
+    - imperfect information
+    - mechanism design
+    - bargaining model
+    - signaling game
+    - screening model
+    - Markov decision process
+    - reinforcement learning
+    - Monte Carlo
+    - MCTS
+    - dynamic programming
+    - optimal control
+  validation:
+    - temporal validation
+    - external validation
+    - out of sample
+    - cross validation
+    - held out test
+    - prospective validation
+    - calibration
+    - sensitivity analysis
+    - ablation study
+    - robustness check
+
+risk_terms:
+  - no license
+  - data unavailable
+  - code unavailable
+  - proprietary data
+  - private dataset
+  - no validation
+  - random split only
+  - data leakage
+  - label leakage
+  - small sample
+  - single jurisdiction
+  - manual annotation subjectivity
+  - class imbalance
+  - demographic bias
+  - historical bias
+  - concept drift
+  - not reproducible
+
+jurisdiction_terms:
+  - United States
+  - federal courts
+  - state courts
+  - SCOTUS
+  - Supreme Court
+  - ECHR
+  - European Court of Human Rights
+  - European Union
+  - United Kingdom
+  - Canada
+  - Australia
+  - Spain
+  - CENDOJ
+  - China
+  - India
+  - Brazil
+  - Germany
+  - France
+  - international arbitration
+  - investor state dispute settlement
+
+paper_source_hints:
+  - arXiv
+  - SSRN
+  - Semantic Scholar
+  - OpenAlex
+  - Crossref
+  - ACL Anthology
+  - Artificial Intelligence and Law
+  - Journal of Empirical Legal Studies
+  - Law and Human Behavior
+  - Journal of Law and Economics
+  - Journal of Legal Studies
+  - Political Analysis
+  - PLOS ONE
+  - NeurIPS
+  - ICML
+  - ICLR
+  - ACL
+  - EMNLP
+  - COLING
+  - ICAIL
+  - JURIX
